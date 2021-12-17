@@ -11,11 +11,6 @@ Create one or more instances of actuators. Call the begin-method to tell the lib
 
     instance.begin( reversePin, forwardPin)
 
-To handle the actual control, call the instance.maintain method somwhere in your loop like this:
-
-    unsigned long now = millis();
-    instance.maintain(now);
-
 You can then create your own code to move the actuator using the following commands:
 
     instance.out();
