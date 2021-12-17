@@ -32,7 +32,10 @@ void setup() {
 }
 
 void loop() {
+  // Only call millis once
   unsigned long now = millis();
+
+  // keep things moving
   linear1.maintain(now);
   linear2.maintain(now);
 }

@@ -23,7 +23,7 @@ void setup() {
   pinMode(contractButtonPin, INPUT);
 
   // Set the pins to control the actuator
-  linearActuatorInstance.begin(ACTUATOR_REVERSE_PIN, ACTUATOR_FORWARD_PIN);
+  linearActuatorInstance.begin(extendPin, contractPin);
 }
 
 void loop() {
